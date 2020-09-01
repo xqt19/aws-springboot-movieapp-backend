@@ -9,7 +9,7 @@ public class Movie {
 	private String movieGenre;
 	private int movieYear;
 	private double movieRating;
-//	private List<String> movieActors;
+	private List<String> movieActors;
 
 	
 	public Movie() {
@@ -25,6 +25,19 @@ public class Movie {
 		this.movieGenre = movieGenre;
 		this.movieYear = movieYear;
 		this.movieRating = movieRating;
+	}
+
+
+	public Movie(long id, String movieTitle, String movieLang, String movieGenre, int movieYear, double movieRating,
+			List<String> movieActors) {
+		super();
+		this.id = id;
+		this.movieTitle = movieTitle;
+		this.movieLang = movieLang;
+		this.movieGenre = movieGenre;
+		this.movieYear = movieYear;
+		this.movieRating = movieRating;
+		this.movieActors = movieActors;
 	}
 
 
@@ -85,6 +98,16 @@ public class Movie {
 
 	public void setMovieRating(double movieRating) {
 		this.movieRating = movieRating;
+	}
+
+
+	public List<String> getMovieActors() {
+		return movieActors;
+	}
+
+
+	public void setMovieActors(List<String> movieActors) {
+		this.movieActors = movieActors;
 	}
 
 	
