@@ -43,6 +43,23 @@ public class FakeMovieDaoImpl implements MovieDao {
 	}
 	
 	
+	//FINDALL METHODS
+	@Override
+	public List<Movie> findAllByYear(String view){
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	// ACTOR METHODS
+	@Override
+	public List<String> findAllActors() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
 //	static {
 //		List<String> myList = new ArrayList<String>();
 //		myList.add("Robbie Ashworth");

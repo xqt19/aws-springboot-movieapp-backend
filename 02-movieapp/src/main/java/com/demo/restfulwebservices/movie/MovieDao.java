@@ -9,7 +9,12 @@ public interface MovieDao {
 	void deleteById(long id);
 	void updateMovie(Movie movie);
 	void createMovie(Movie movie);
+	
+	//findall
+	List<Movie> findAllByYear(String view);
 //
+	//ACTOR METHODS
+	List<String> findAllActors();
 	
 //
 	

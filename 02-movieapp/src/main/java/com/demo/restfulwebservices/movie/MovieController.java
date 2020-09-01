@@ -22,7 +22,7 @@ public class MovieController {
 	
 	@Autowired
 	private MovieService movieService;
-
+	
 	@RequestMapping(method=RequestMethod.GET, path="/movies")
 	public List<Movie> findAll(){
 		return movieService.findAll();
@@ -44,6 +44,25 @@ public class MovieController {
 	public void createMovie(@RequestBody Movie movie){
 		movieService.createMovie(movie);
 	}
+	
+	
+	
+	//ACTORS METHODS
+	@RequestMapping(method=RequestMethod.GET, path="/actors")
+	public List<String> findAllActors(){
+		return movieService.findAllActors();
+	}
+	
+	
+	
+	
+	//FINDALL METHODS
+	@RequestMapping(method=RequestMethod.GET, path="/index/{view}")
+	public List<Movie> findAllByYear(@PathVariable String view){
+		return movieService.findAllByYear(view);
+	}
+	
+	
 //	@RequestMapping(method=RequestMethod.POST, path="/movies")
 //	public ResponseEntity<Void> createMovie
 //	(@RequestBody Movie movie){

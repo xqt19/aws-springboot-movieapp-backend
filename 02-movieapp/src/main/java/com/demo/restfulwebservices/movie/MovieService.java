@@ -28,5 +28,15 @@ public class MovieService {
 	public void createMovie(Movie movie) {
 		movieDao.createMovie(movie);
 	}
+	
+	//ACTORS METHODS
+	public List<String> findAllActors(){
+		return movieDao.findAllActors();
+	}
+	
+	//findall
+	public List<Movie> findAllByYear(String view){
+		return movieDao.findAllByYear(view);
+	}
 }
 
