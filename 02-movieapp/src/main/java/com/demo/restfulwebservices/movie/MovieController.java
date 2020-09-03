@@ -17,7 +17,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
 //@CrossOrigin(origins="http://xqpoc.s3-website-ap-southeast-1.amazonaws.com")
-@CrossOrigin(origins = {"http://localhost:4200", "http://xqpoc.s3-website-ap-southeast-1.amazonaws.com"})
+@CrossOrigin(origins = {"http://localhost:4200", "http://xqpoc.s3-website-ap-southeast-1.amazonaws.com", "https://d1sjwk1lmcwu57.cloudfront.net", "https://q7z7wqfyjf.execute-api.ap-southeast-1.amazonaws.com/xqpoc"})
 public class MovieController {
 	
 	@Autowired
